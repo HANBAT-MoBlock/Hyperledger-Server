@@ -167,7 +167,7 @@ public class UserService {
     public AssetDto getAsset(HttpServletRequest httpServletRequest) {
 
         User findUser = getUserByHttpServletRequest(httpServletRequest);
-//hello tw
+//hello twㅎㅎ
         try {
             Gateway gateway = fabricService.getGateway();
             String response = fabricService.submitTransaction(
