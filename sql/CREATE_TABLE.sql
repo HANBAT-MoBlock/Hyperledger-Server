@@ -70,6 +70,7 @@ CREATE TABLE trade(
                       date_created datetime not null,
                       last_updated datetime not null,
                       PRIMARY KEY(trade_id),
+                      UNIQUE KEY(TRANSACTION_ID),
                       FOREIGN KEY(sender_id) REFERENCES user(user_id) on delete set null ,
                       FOREIGN KEY(receiver_id) REFERENCES user(user_id) on delete set null ,
                       FOREIGN KEY(coin_id) REFERENCES coin(coin_id)
